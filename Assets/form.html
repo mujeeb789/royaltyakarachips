@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #contactForm {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-inline: 1rem;
+      padding: 9rem;
+      margin: 2rem 1rem;
+      /* background-color: rgba(104, 79, 64, 0.9); */
+      background-color: #360334;
+    }
+
+    #contactForm h3 {
+      font-size: 1.8rem;
+      margin: 1rem;
+      color: #fff;
+    }
+
+    #contactForm p {
+      text-align: center;
+      line-height: 1.7rem;
+      color: #fff;
+      margin-bottom: 1.5rem;
+    }
+
+    #contactForm input {
+      margin: 0.5rem 0;
+      color: #696969;
+      font-size: 1rem;
+    }
+
+    #contactForm input,
+    textarea {
+      margin: 0.7rem 0;
+      color: #696969;
+      outline: 0;
+      border: 0.15rem solid #e1e1e1;
+      padding: 1.5rem;
+      width: 100%;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    #contactForm textarea {
+      margin-top: 0.7rem;
+    }
+
+    #contactForm {
+      margin-top: 0;
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 4rem;
+      background-color: #360334;
+    }
+
+    #contactForm input[type="submit"] {
+      text-transform: uppercase;
+      color: #000;
+      font-weight: 500;
+      font-size: 1.1rem;
+      letter-spacing: 0.3rem;
+    }
+
+    #contactForm input[type="submit"]:hover {
+      background-color: #360334;
+      color: #fff;
+      transition: 0.6s;
+    }
+  </style>
+</head>
+
+<body>
+  action="https://formspree.io/f/mrgwjgyz" method="POST"
+  <form onclick="sendEmail(); reset(); return false;" id="contactForm">
+    <h3>
+      CONTACT US
+    </h3>
+    <p>
+      Meet the creative team that never sleeps. Say something to us we will answer to you.
+    </p>
+    <input type="text" name="fName" required>
+
+    <input type="email" name="Email" required>
+
+    <input type="number" step="0.01" placeholder="phone" id="phone" required>
+
+    <input type="Address" placeholder="Address" required>
+
+    <textarea placeholder="message" id="textArea" cols="30" rows="8" required>
+                </textarea>
+    <input type="submit" value="send">
+    <!-- <button id="sendButton">send </button> -->
+  </form>
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail(){
+      Email.send({
+        Host: "smtp.gmail.com",
+        Username: "australcodez@gmail.com",
+        Password: "password",
+        To: 'australcodez@gmail.com',
+        From: document.getElementById("email").value,
+        Subject: "This is the subject",
+        Body: "And this is the body"
+      }).then(
+        message => alert(message)
+      );
+    }
+  </script>
+</body>  
+
+</html>
