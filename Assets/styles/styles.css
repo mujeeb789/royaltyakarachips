@@ -675,9 +675,6 @@ h3 {
     margin-left: -8rem;
   }
 
-  #contactForm input[type="submit"] {
-    width: 30rem;
-  }
   #subscribe {
     display: flex;
     flex-direction: row;
@@ -738,7 +735,10 @@ h3 {
   }
 
   #contact {
-    margin-inline: 10rem;
+    margin-inline: 1rem;
+  }
+  #contactForm input[type="submit"] {
+    width: 30rem;
   }
   .productsPics,
   .Staffimages {
@@ -758,7 +758,7 @@ h3 {
   }
 
   footer {
-    padding-inline: 10rem;
+    padding-inline: 1rem;
   }
   #subscribe {
     display: flex;
