@@ -62,7 +62,7 @@ header #logoBackground {
 }
 
 #logoImg {
-  height: 7em;
+  height: 5em;
 }
 
 .lines {
@@ -98,13 +98,14 @@ span {
 
 nav {
   overflow: hidden;
+  overflow-y: auto;
   position: fixed;
   top: 0rem;
   bottom: 0;
   left: 0;
   right: 0;
   background-color: white;
-  z-index: 1;
+  z-index: 3;
   /* transform: translateX(1000px); */
   /* transition: all 0.4s ease-in-out; */
   visibility: hidden;
@@ -322,7 +323,7 @@ textarea::placeholder {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-bottom: 1.5rem;
+  margin-bottom: 10rem;
 }
 #buttonContainer #allProducts {
   position: relative;
@@ -377,13 +378,13 @@ textarea::placeholder {
   height: 100%;
   background: #360334;
   transition: all 0.5s;
-  z-index: 1;
+  z-index: -1;
 }
 #request:hover::before {
   width: 0;
 }
 #buttonContainer #request:hover {
-  background-color: #fff;
+  background-color: transparent;
   color: #360334;
 }
 
@@ -682,6 +683,10 @@ h3 {
     flex-direction: row;
     /* justify-content: space-between; */
     gap: 1rem;
+  }
+  #buttonContainer{
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   footer input[type="submit"] {
