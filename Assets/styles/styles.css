@@ -32,9 +32,6 @@ header {
 header li {
   display: none;
 }
-header #logoBackground {
-  display: flex;
-}
 
 #cart {
   background-color: #360334;
@@ -52,9 +49,6 @@ header #logoBackground {
 }
 
 #logoBackground {
-  background-color: #360334;
-  padding: 0em;
-  margin-left: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -530,6 +524,7 @@ footer .logoSection #logoImg {
   margin-bottom: 2rem;
 }
 .socialIcons {
+  display: flex;
   margin-top: -1rem;
   margin-bottom: 2rem;
 }
