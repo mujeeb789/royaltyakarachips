@@ -205,6 +205,11 @@ article h3 {
   padding-bottom: 1rem;
   padding-top: 1rem;
 }
+article span{
+  font-weight: bolder;
+  color: #0e010e;
+  font-size: 1.2rem;
+}
 #Products,
 #Ourstaffs {
   display: flex;
@@ -218,6 +223,9 @@ article h3 {
   color: #360334;
   text-transform: uppercase;
   padding-bottom: 1rem;
+}
+#Products h3{
+  margin-top: 2rem;
 }
 article p,
 #Products p,
