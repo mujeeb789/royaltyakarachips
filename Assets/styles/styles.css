@@ -83,12 +83,7 @@ header li {
   border-radius: 50%;
   color: #fff;
 }
-span {
-  color: #000;
-  font-size: 16px;
-  height: 1em;
-  width: 1em;
-}
+
 
 nav {
   overflow: hidden;
