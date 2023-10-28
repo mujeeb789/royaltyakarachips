@@ -3,12 +3,12 @@
   margin: 0;
   box-sizing: border-box;
 }
-@font-face {
+/* @font-face {
   font-family: "Roboto_Slab";
   src: url(../RobotoSlab-VariableFont_wght.ttf);
-}
+} */
 body {
-  font-family: Roboto_Slab;
+  font-family: 'Roboto Slab', serif;
 }
 img {
   max-width: 100%;
