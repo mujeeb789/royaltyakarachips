@@ -384,6 +384,24 @@ textarea::placeholder {
   background-color: transparent;
   color: #360334;
 }
+#reviews h4{
+  font-size: 1.8rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.reviewsContainer{
+  margin: 0 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+.reviewsContainer img{
+  width: 30%;
+  border-radius: 10%;
+  object-fit: cover;
+}
 
 #contactForm {
   display: flex;
