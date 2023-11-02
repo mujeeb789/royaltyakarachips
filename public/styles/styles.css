@@ -156,7 +156,6 @@ nav ul li a:hover {
   flex-direction: column;
   width: 100%;
   background-color: #fff;
-  position: relative;
 }
 .slideImg {
   height: 25rem;
@@ -384,10 +383,14 @@ textarea::placeholder {
   background-color: transparent;
   color: #360334;
 }
+#reviews{
+  position: relative;
+}
 #reviews h4{
   font-size: 2rem;
   text-align: center;
   padding-bottom: 2rem;
+  color: #440442;
 }
 .reviewsContainer{
   margin: 0 2rem 1rem;
@@ -401,6 +404,33 @@ textarea::placeholder {
   width: 30%;
   border-radius: 10%;
   object-fit: cover;
+}
+#rprev,
+#rnext {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  line-height: 2em;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 50%;
+  font-size: 2rem;
+  transform: translateY(-50%);
+  transition: all 200ms ease;
+  background-color: #360334;
+  border: none;
+  opacity: 0.7;
+}
+#rprev {
+  left: 0.5em;
+}
+#rnext {
+  right: 0.5em;
+}
+#rprev:hover,
+#rnext:hover {
+  opacity: 1;
 }
 
 #contactForm {
