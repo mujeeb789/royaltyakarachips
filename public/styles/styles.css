@@ -395,13 +395,24 @@ textarea::placeholder {
 .reviewsContainer{
   margin: 0 2rem 1rem;
   display: flex;
+  flex-direction: column;
+  text-align: center;
   justify-content: center;
   align-items: center;
   gap: 1rem;
   font-size: 1.2rem;
 }
+.reviewsContainer #first{
+  order: 1;
+}
+.reviewsContainer #third{
+  order: 3;
+}
+.reviewsContainer #second{
+  order: 2;
+}
 .reviewsContainer img{
-  width: 30%;
+  width: 50%;
   border-radius: 10%;
   object-fit: cover;
 }
@@ -731,6 +742,21 @@ h3 {
     flex-direction: row;
     justify-content: space-between;
   }
+  .reviewsContainer{
+    flex-direction: row;
+  }
+  .reviewsContainer img{
+    width: 30%;
+  }
+  .reviewsContainer #first{
+  order: 1;
+}
+.reviewsContainer #third{
+  order: 2;
+}
+.reviewsContainer #second{
+  order: 3;
+}
 
   footer input[type="submit"] {
     padding: 1rem 2rem;
@@ -779,6 +805,7 @@ h3 {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 5rem;
   }
+  
 
   #contact {
     margin-inline: 1rem;
