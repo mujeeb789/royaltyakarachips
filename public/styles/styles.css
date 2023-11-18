@@ -626,7 +626,7 @@ h3 {
   font-size: 1.2rem;
 }
 .gmail {
-  color: #cc34eb;
+  color: #e8cfed;
   text-decoration: none;
   font-weight: 600;
   font-size: 1.2rem;
@@ -643,10 +643,10 @@ h3 {
 #copyRight {
   margin-top: 2rem;
   text-align: center;
-  color: #696969;
+  color: #e4e3e3;
 }
 #copyRight span {
-  color: #cc34eb;
+  color: #eedcf2;
 }
 #copyRight p {
   margin-bottom: 0.5rem;
